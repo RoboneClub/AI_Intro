@@ -19,13 +19,13 @@ A Dockerfile is a text file that tells Docker all of the languages, distribution
 ## How to install Docker?
 To install Docker click on https://docs.Docker.com/get-Docker.
 
-![](images/homescreen)
+![](Images/homescreen.png)
 
 Open the link to your corresponding OS and make sure that your machine meets the system requirements.
 
 Run the Docker installer once downloaded. After Docker has completed unpacking all of the files, run the Docker For Desktop application.
 
-![](images/error)
+![](Images/error.png)
 
  If you get this error then there is an issue with your Linux kernel. This is a very common issue. Follow the steps in https://aka.ms/wsl2kernel. Once that is fixed, restart Docker.
 
@@ -37,23 +37,23 @@ Open up your go-to editor and create a new folder called “first_container”.
 
 In the folder, create two new files. The first one will be “app.py” and the second one will just be called “Dockerfile” with no extension.
 
-![](images/editor)
+![](Images/editor.png)
 
 In the python file, write 
 
-'''
+```
 print(“Hello World!”)
-'''
+```
 
 In the Dockerfile, write
-'''
+```
 FROM python:3
 COPY . /first_container
 WORKDIR /first_container
 CMD python app.py
-'''
+```
 
-![](images/code)
+![](Images/code.png)
 
 The first line indicates the language and the release version
 The second line tells Docker which files to include in the image
@@ -61,13 +61,17 @@ The third line changes the working directory to first_container
 The fourth line tells Docker what to run in the command prompt
 
 Once this is done, open up your command prompt and type in
-“”Docker build -t first_container .””
+```
+Docker build -t first_container .
+```
 
-![](images/build)
+![](Images/build.png)
 
 Once the Docker has finished building the image, type 
-“”Docker run first_container .””
+```
+Docker run first_container
+```
 
-![](images/run)
+![](Images/run.png)
 
 Congratulations! You have just created your first Docker image and container.
