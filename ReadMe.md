@@ -62,14 +62,14 @@ The fourth line tells Docker what to run in the command prompt
 
 Once this is done, open up your command prompt and type in
 ```
-Docker build -t first_container .
+docker build -t first_container .
 ```
 
 ![](Images/build.png)
 
 Once the Docker has finished building the image, type 
 ```
-Docker run first_container
+docker run first_container
 ```
 
 ![](Images/run.png)
