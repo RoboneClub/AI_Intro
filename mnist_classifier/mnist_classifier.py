@@ -36,9 +36,3 @@ except:
     model.save("mnist_classifier.h5")
 
 model.evaluate(x_test, y_test)
-
-#How to decode prediction comment
-#Repeat everything for CIFAR-10 dataset
-#Dockerize everything
-#Install libraries from a requirments.txt
-#Make a short article on the differences b/w sequential and keras functional APIs and why the latter is better
