@@ -8,7 +8,7 @@ Artificial neural networks, also called neural networks, are the backbone of Art
 
 Neural networks consist of 3 key components: an input layer, the hidden layers, and an output layer.
 
-!["Images/Network.png"]
+![](Images/Network.png)
 
 Each node in a neural network is called a neuron and holds a value between 1 and 0. The higher this activation number is, the more active a neuron is.
 
