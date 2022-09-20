@@ -20,7 +20,7 @@ $28 *28* 1 = 784$
 
 Let us assign each bit a number between 1 and 0, indicating how bright each bit is; so that we get
 
-![Images/Nine_with_activation.png]
+![](Images/Nine_with_activation.png)
 
 Take each row and line them all together to form one long line of 784 neurons, with each activation number corresponding to their brightness. These 784 neurons make up the first input layer.
 The structure of the hidden layers in each neural network is entirely arbitrary. For simplicity, we will consider 2 hidden layers, each with 16 neurons.
