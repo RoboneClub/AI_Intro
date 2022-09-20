@@ -37,11 +37,11 @@ Not all neurons in the input layer equally contribute to a neuron in the second 
 Let each of the 784 activation numbers be denoted by $a_{N}^{L-1}$ where $N$ is the number of the neuron and $L$ is the layer number.
 This means that the equation for the activation energy of a neuron is not
 
-a^{L}_{0}=\sum_{N=1}^{784}\frac{a_{N}^{L-1}}{784}
+$$a^{L}_{0}=\sum_{N=1}^{784}\frac{a_{N}^{L-1}}{784}$$
 
 But instead, it is
 
-a^{L}_{0}=\sum_{N=1}^{784}w^{L-1}_{N}\cdot a^{L-1}_{N}-b
+$$a^{L}_{0}=\sum_{N=1}^{784}w^{L-1}_{N}\cdot a^{L-1}_{N}-b$$
 
 Where $w$ is the weight as a multiplier and $b$ is the bias.
 Let's say, for example, that we only want a neuron to be active when its activation number is greater than 5. Then we will adjust the bias by substituting 5 in for $b$ so that the activation number will only be greater than 0 when the weighted sum is greater than 5.
@@ -75,7 +75,7 @@ It is important to note that for a more complex function, there are many differe
 Let's say, for example, that we are classifying a picture of the number two.
 In the output layer, we want to increase the activation number for the neuron corresponding to a two and decrease all other activation numbers.
 
-![Images/Backpropagation.png]
+![](Images/Backpropagation.png)
 
 Now that we know which neuron's values we want to increase or decrease and by how much, how do we change the activation number of those neurons? The computer uses a process called backpropagation to do this. If we want to change a neuron's activation number, it can be accomplished by changing one of three things.
 
